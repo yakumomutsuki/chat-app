@@ -106,7 +106,7 @@ Vagrant.configure("2") do |config|
     # mysqlをインストール
     # https://dev.mysql.com/downloads/repo/yum/
     yum localinstall -y https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
-    yum install -y mysql-community-server
+    yum install -y mysql-community-server mysql-devel
 
     # mysqlを常時起動に変更
     systemctl enable mysqld
